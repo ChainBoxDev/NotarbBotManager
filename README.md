@@ -5,4 +5,4 @@
 • Automated transaction management
 • Secure API integration
 
-📦 Check README.md for installation instructions.
+📦 Check the README.md inside the ZIP for installation instructions.
