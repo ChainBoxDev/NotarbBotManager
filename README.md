@@ -168,23 +168,23 @@ Your bot needs to receive HTTP requests from the automation service on port 8888
 
 **For Ubuntu/Debian (UFW) - RECOMMENDED SECURE SETUP:**
 ```bash
-# Step 1: Close port 8888 to everyone
-sudo ufw deny 8888
-
-# Step 2: Allow only ChainBox automation service IPs
+# Step 1: Allow ChainBox automation service IPs FIRST (CRITICAL: Must be before DENY rule)
 sudo ufw allow from 208.77.244.0/24 to any port 8888
+
+# Step 2: Deny all other IPs from accessing port 8888
+sudo ufw deny 8888
 
 # Step 3: Enable firewall and verify
 sudo ufw enable
 sudo ufw status
 ```
 
-**Expected UFW status output:**
+**Expected UFW status output (CORRECT ORDER):**
 ```
 To                         Action      From
 --                         ------      ----
-8888                       DENY        Anywhere
 8888                       ALLOW       208.77.244.0/24
+8888                       DENY        Anywhere
 ```
 
 **⚠️ SECURITY BENEFITS:**
