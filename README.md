@@ -289,5 +289,6 @@ If you encounter issues:
 
 **🎯 Once configured, your bot will automatically receive trading signals and manage bots without manual intervention!**
 
-
-[Screenshot 2025-09-25 at 16 45 17](https://github.com/user-attachments/assets/6de710a3-2064-4313-879a-f08ebf82cf5c)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6de710a3-2064-4313-879a-f08ebf82cf5c" alt="image" width="500" />
+</p>
