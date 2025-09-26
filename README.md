@@ -214,16 +214,6 @@ If not running, start it:
 ./start.sh
 ```
 
-#### Verify Webhook Server
-After starting the bot, check logs to confirm webhook server started:
-```bash
-screen -r chainbox_tg_notarb
-# Look for: "✅ Webhook server started on port 8888"
-# Look for: "📡 Ready to receive signals at http://0.0.0.0:8888/webhook/signal"
-```
-
-Press `Ctrl+A` then `D` to detach from screen.
-
 ### 3. 📡 Configure Auto-Pilot in Telegram Bot
 
 Open your NOTARB Telegram bot and configure Auto-Pilot:
